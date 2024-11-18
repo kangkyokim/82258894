@@ -1,13 +1,14 @@
-apiVersion : apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "82258894" 
+  name: "82258894"
+  namespace: default
 spec:
   replicas: 1
   template:
     spec:
       containers:
-        - name: "82258894" 
+        - name: "82258894"
           command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
@@ -18,7 +19,6 @@ spec:
           - mountPath: /config
             name: application-properties
             readOnly: true
-                          
       volumes:
       - name: "82258894-volume"
         persistentVolumeClaim:
@@ -30,3 +30,4 @@ spec:
             - key: application.yml
               path: application.yml
           defaultMode: 420
+

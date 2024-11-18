@@ -13,7 +13,7 @@ spec:
         app: "8225884" 
     spec:
       containers:
-        - name: "99999598" 
+        - name: "82258894" 
           image: cepgstapacr.azurecr.io/8225884
           ports:
           - containerPort: 8080

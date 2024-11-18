@@ -1,16 +1,16 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "8225884" 
+  name: "82258894" 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "8225884"
+      app: "82258894"
   template:
     metadata:
       labels:
-        app: "8225884" 
+        app: "82258894" 
     spec:
       containers:
         - name: "82258894" 
